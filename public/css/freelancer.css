@@ -457,3 +457,60 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+.fa-heart{
+
+
+  font-size: 20px;
+  color: red;
+  -webkit-animation: 2s blink step-end infinite;
+  -moz-animation: 2s blink step-end infinite;
+  -ms-animation: 2s blink step-end infinite;
+  -o-animation: 2s blink step-end infinite;
+  animation: 2s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: red;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: red;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: red;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: red;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: red;
+
+}
+}
