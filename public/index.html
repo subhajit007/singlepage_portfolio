@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+<style>
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/load.gif') center no-repeat #fff;
+}
+</style>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +32,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
     <!-- Goolge Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -35,7 +47,7 @@
 </head>
 
 <body id="page-top" class="index">
-<i class="fa fa-cog fa-spin fa-5x"></i>
+<div class="se-pre-con"></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -463,6 +475,13 @@ My previous management experience has sharpened my ability to solve problems, an
     <script src="js/jquery.js"></script>
     <script src="js/typed.js"></script>
     <script>
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+    });
+
+    </script>
+    <script>
   $(function(){
       $(".skills").typed({
         strings: ["Hello, I am Subhajit Banerjee.", "You can call me Jit.","I am a web developer.", "Designer,", "Geek", "I live and work in Los Angeles", "Web Developer / Designer/ Geek "],
@@ -491,11 +510,6 @@ My previous management experience has sharpened my ability to solve problems, an
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
-    <script language="javascript" type="text/javascript">
-     $(window).load(function() {
-     $('.fa-cog').hide();
-  });
-    </script>
 
 </body>
 

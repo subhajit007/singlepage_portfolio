@@ -578,12 +578,3 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
     width: 100%;
 }
 
-/*loading screen */
-.fa-cog{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
